@@ -88,7 +88,7 @@ graph LR
 ```
 projeto-enem-2023/
 ├── 📊 notebooks/
-│   ├── 01_data_cleaning.ipynb           # Limpeza e tratamento dos dados
+│   ├── 01_data_cleaning.ipynb           # Limpeza e tratamento dos dados | ![Acesse o Codigo](https://img.shields.io/badge/Python-blue.svg)
 │   ├── 02_feature_engineering.ipynb     # Criação de variáveis derivadas  
 │   └── 03_eda_analytics.ipynb           # Análise exploratória completa
 ├── 📈 data/
