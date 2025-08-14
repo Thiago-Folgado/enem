@@ -87,8 +87,8 @@ graph LR
 projeto-enem-2023/
 ├── 📊 notebooks/
 │   ├── 01_data_cleaning.ipynb           # Limpeza e tratamento dos dados
-│   ├── 02_feature_engineering.ipynb    # Criação de variáveis derivadas  
-│   └── 03_exploratory_analysis.ipynb   # Análise exploratória completa
+│   ├── 02_feature_engineering.ipynb     # Criação de variáveis derivadas  
+│   └── 03_eda_analytics.ipynb           # Análise exploratória completa
 ├── 📈 data/
 │   ├── samples/                         # Amostras para teste (1k registros)
 │   └── processed/                       # Dados processados finais
