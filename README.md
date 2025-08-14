@@ -101,7 +101,7 @@ projeto-enem-2023/
 
 ## 📊 **Variáveis Criadas (Feature Engineering)**
 
-### **🔢 Índices Compostos Desenvolvidos**
+### **🔢 Índices Compostos Desenvolvidos e mais**
 
 | **Índice** | **Componentes** | **Interpretação** |
 |------------|-----------------|-------------------|
@@ -110,10 +110,8 @@ projeto-enem-2023/
 | **Transporte** | Carros, Motocicletas | Mobilidade familiar |
 | **Estrutura Casa** | Banheiros, Quartos, Empregado doméstico | Infraestrutura residencial |
 | **Escolaridade Pais** | Soma escolaridade pai + mãe | Capital cultural familiar |
-
-### **💰 Variáveis Econômicas**
-- **Renda Per Capita**: Calculada a partir de faixas de renda familiar
-- **Faixas Renda Per Capita**: 9 categorias baseadas em salários mínimos
+| **Região** | Região do brasil de acordo com o Estado da prova | Variavel Espacial |
+| **Faixa de Renda Per Capita** | De acordo com a Renda familiar declarada, foi feito uma estimativa media considerando tambem a quantidade de pessoas na residencia | Fator economico isolando variavel de Pessoas na residencia |
 
 ## 📈 **Principais Análises Realizadas**
 
