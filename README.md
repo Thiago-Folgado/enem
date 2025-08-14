@@ -54,11 +54,22 @@ graph LR
 ```
 
 ### **🔧 Técnicas Aplicadas**
-- **Limpeza de Dados**: Remoção colunas de colunas descnecessarias, pouco relevantes ou redundantes; Renomeção de colunas e reordenação logica das mesmas; Mapeamento dos dados categoricos de acordo com o dicionario de dados; Remoção de candidatos que não compareceram em todas as provas; Remoção de colunas com alto indice de valores ausentes. 
-Resultado: De um dataframe pouco intuitivo com diversos fatores a serem tratados e ajustados (2,6mm de registros e 48 colunas) para uma dataframe de legivel, mais enxuto e legivel (3,9mm de registros e 58 colunas).
-- **Feature Engineering**: Mapeamento das variaveis qualitativas para quantitavivas ordinais para analises posteriores, criação de colunas como "Região", "Nota media Geral do candidato", "Faixa de renda per capita" e colunas de índices socioeconômicos compostos para analises posteriores.
-- **Análise Estatística**: Correlações de Pearson, distribuições, outliers. Realizando analises Univariadas e Bivariadas para entender melhor a distribuição dos candidatos e suas respectivas performaces e analises das variaveis que afetam ou não a performace do candidato.
-- **Visualização**: Histogramas, boxplots, heatmaps de correlação
+- **Limpeza de Dados**: 
+    Remoção colunas de colunas descnecessarias, pouco relevantes ou redundantes; 
+    Renomeção de colunas e reordenação logica das mesmas; 
+    Mapeamento dos dados categoricos de acordo com o dicionario de dados; 
+    Remoção de candidatos que não compareceram em todas as provas; 
+    Remoção de colunas com alto indice de valores ausentes. 
+    Resultado: De um dataframe pouco intuitivo com diversos fatores a serem tratados e ajustados (2,6mm de registros e 48 colunas) para uma dataframe de legivel, mais enxuto e legivel (3,9mm de registros e 58 colunas).
+- **Feature Engineering**:
+    Mapeamento das variaveis qualitativas para quantitavivas ordinais para analises posteriores:
+    Criação de colunas como "Região", "Nota media Geral do candidato", "Faixa de renda per capita";
+    Criação de colunas de índices socioeconômicos compostos para analises posteriores.
+- **Análise Estatística**:
+Correlações de Pearson, distribuições, outliers.
+    Realizando analises Univariadas e Bivariadas para entender melhor a distribuição dos candidatos e suas respectivas performaces e analises das variaveis que afetam ou não a performace do candidato.
+- **Visualização**:
+    Histogramas, boxplots, heatmaps de correlação
 
 ## 📁 **Estrutura do Projeto**
 
