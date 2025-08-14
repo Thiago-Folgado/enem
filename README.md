@@ -12,8 +12,8 @@
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![Pandas](https://img.shields.io/badge/Pandas-1.5+-green.svg)
+![Python](https://img.shields.io/badge/Python-blue.svg)
+![Pandas](https://img.shields.io/badge/Pandas-green.svg)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)
 ![Status](https://img.shields.io/badge/Status-Em_Andamento-yellow.svg)
 
