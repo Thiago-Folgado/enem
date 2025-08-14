@@ -1,5 +1,13 @@
 # 📊 Análise ENEM 2023: Desvendando Desigualdades Educacionais no Brasil
 
+<img width="1784" height="590" alt="image" src="https://github.com/user-attachments/assets/3a9bec14-b643-4479-bbac-80cf7cb83d12" />
+
+<img width="1463" height="590" alt="image" src="https://github.com/user-attachments/assets/db998e50-187d-4e44-a747-263909776aee" />
+
+<img width="1371" height="709" alt="image" src="https://github.com/user-attachments/assets/8c9c5a35-7445-4973-b307-3d6db072e017" />
+
+<img width="1583" height="982" alt="image" src="https://github.com/user-attachments/assets/8700c05a-8972-418f-b978-e8487ae6722f" />
+
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
