@@ -72,7 +72,7 @@ graph LR
     - Mapeamento dos dados categoricos de acordo com o dicionario de dados; 
     - Remoção de candidatos que não compareceram em todas as provas; 
     - Remoção de colunas com alto indice de valores ausentes. 
-    - Resultado: De um dataframe pouco intuitivo com diversos fatores a serem tratados e ajustados (2,6mm de registros e 48 colunas) para uma dataframe de legivel, mais enxuto e legivel (3,9mm de registros e 58 colunas).
+    - Resultado: De um dataframe pouco intuitivo com diversos fatores a serem tratados e ajustados (3,9mm de registros e 58 colunas) para uma dataframe de legivel e mais enxuto (2,6mm de registros e 48 colunas).
 - **Feature Engineering**:
     - Mapeamento das variaveis qualitativas para quantitavivas ordinais para analises posteriores:
     - Criação de colunas como "Região", "Nota media Geral do candidato", "Faixa de renda per capita";
