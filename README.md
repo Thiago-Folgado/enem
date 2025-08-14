@@ -8,6 +8,8 @@
 
 <img width="1583" height="982" alt="image" src="https://github.com/user-attachments/assets/8700c05a-8972-418f-b978-e8487ae6722f" />
 
+
+
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
