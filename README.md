@@ -10,7 +10,7 @@
 
 <img width="1583" height="982" alt="image" src="https://github.com/user-attachments/assets/8700c05a-8972-418f-b978-e8487ae6722f" />
 
-
+* Caso queira ver a galeria de graficos e figuras, acesse (https://github.com/Thiago-Folgado/enem/tree/main/reports/figures)
 
 <div align="center">
 
