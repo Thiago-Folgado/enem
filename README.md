@@ -1,4 +1,4 @@
-# 📊 Análise ENEM 2023: Desvendando Desigualdades Educacionais no Brasil
+# 📊 Análise ENEM 2023: Desvendando Desigualdades Educacionais no Brasil com Python e Estatística
 
 ## Algumas visões geradas no projeto:
 
