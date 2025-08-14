@@ -187,4 +187,8 @@ projeto-enem-2023/
 
 Os dados do ENEM são públicos e disponibilizados pelo INEP.
 
+<div align="center">
+⭐ Se este projeto demonstrou valor, considere dar uma estrela!
+Desenvolvido para mostrar expertise em soluções de BI end-to-end com impacto real de negócio.
+</div>
 
