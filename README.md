@@ -31,7 +31,7 @@ Este projeto realiza uma análise exploratória completa dos **microdados do ENE
 - 💡 **Gerar insights** para políticas públicas educacionais, para o conhecimento geral e para matar minha curiosidade
 - 🛠️ **Demonstrar** habilidades em análise de dados com Python e bibliotecas como pandas, numpy, seaborn e matplotlib
 
-## 📈 **Principais Descobertas**
+## 📈 **Principais Descobertas [ANALISE EM ANDAMENTO]**
 
 ### 🏆 **Insights de Alto Impacto**
 
