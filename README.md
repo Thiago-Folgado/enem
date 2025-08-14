@@ -5,23 +5,21 @@
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![Pandas](https://img.shields.io/badge/Pandas-1.5+-green.svg)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)
-![Status](https://img.shields.io/badge/Status-Completo-brightgreen.svg)
+![Status](https://img.shields.io/badge/Status-Em_Andamento-yellow.svg)
 
 *Uma análise exploratória completa dos microdados do ENEM 2023, revelando padrões socioeconômicos que influenciam o desempenho educacional brasileiro.*
-
-[📖 Ver Análise Completa](#estrutura-do-projeto) • [🚀 Como Executar](#como-executar) • [📈 Principais Descobertas](#principais-descobertas)
 
 </div>
 
 ## 🎯 **Sobre o Projeto**
 
-Este projeto realiza uma análise exploratória completa dos **microdados do ENEM 2023**, processando mais de **3 milhões de registros** para identificar padrões e correlações entre fatores socioeconômicos e desempenho educacional no Brasil.
+Este projeto realiza uma análise exploratória completa dos **microdados do ENEM 2023**, processando mais de **3 milhões de registros** para identificar padrões e correlações entre fatores socioeconômicos, caracteristicas do candidato e desempenho educacional no Brasil.
 
 ### **Motivação**
 - 🔍 **Identificar** fatores que influenciam o desempenho no ENEM
-- 📊 **Quantificar** desigualdades educacionais regionais e socioeconômicas  
-- 💡 **Gerar insights** para políticas públicas educacionais
-- 🛠️ **Demonstrar** habilidades em análise de dados com Python
+- 📊 **Quantificar** desigualdades educacionais regionais, socioeconômicas entre outros fatores 
+- 💡 **Gerar insights** para políticas públicas educacionais, para o conhecimento geral e para matar minha curiosidade
+- 🛠️ **Demonstrar** habilidades em análise de dados com Python e bibliotecas como pandas, numpy, seaborn e matplotlib
 
 ## 📈 **Principais Descobertas**
 
@@ -29,19 +27,19 @@ Este projeto realiza uma análise exploratória completa dos **microdados do ENE
 
 | 🔍 **Descoberta** | 📊 **Métrica** | 🎯 **Implicação** |
 |-------------------|----------------|-------------------|
-| **Correlação Tecnologia-Desempenho** | Índice Tecnológico vs Nota: **r = 0.52** | Acesso à tecnologia é preditor forte de performance |
-| **Desigualdade Regional** | Sudeste: **15.2% acima** da média nacional | Concentração de recursos educacionais |
-| **Impacto Escolaridade dos Pais** | Correlação: **r = 0.48** | Capital cultural familiar influencia diretamente |
-| **Perfil Socioeconômico** | Renda per capita vs Desempenho: **r = 0.45** | Condições econômicas afetam oportunidades educacionais |
+| **Correlação Tecnologia-Desempenho** | Índice Tecnológico vs Nota: **r = 0.4** | Acesso à tecnologia é preditor moderado de performance |
+| **Desigualdade Regional** | Sudeste, Sul, Centro-Oeste, Nordeste e Norte respectivamente seguem o ranking de performace media | regiões que dispõem de uma ambudancia maior de recursos educacionais seria uma hipótese |
+| **Impacto Escolaridade dos Pais** | Correlação: **r = 0.39** | Capital cultural familiar influencia diretamente |
+| **Perfil Socioeconômico** | Renda per capita vs Desempenho: **r = 0.47** | Condições econômicas afetam oportunidades educacionais |
 
 ### 📊 **Distribuição de Desempenho por Região**
-- **Sudeste**: 542.3 pontos (média)
-- **Sul**: 538.7 pontos  
-- **Centro-Oeste**: 521.4 pontos
-- **Nordeste**: 489.2 pontos
-- **Norte**: 478.9 pontos
+- **Sudeste**: 540.85 pontos (média)
+- **Sul**: 536.04 pontos  
+- **Centro-Oeste**: 520.61 pontos
+- **Nordeste**: 502.62 pontos
+- **Norte**: 490.12 pontos
 
-> 💡 **Insight Principal**: A diferença de **63.4 pontos** entre Sudeste e Norte representa aproximadamente **1 desvio padrão**, indicando desigualdade estrutural significativa.
+> 💡 **Insight Principal**: A diferença de **50,73 pontos** entre Sudeste e Norte representa um indicativo de desigualdade estrutural significativa.
 
 ## 🛠️ **Metodologia**
 
@@ -56,9 +54,10 @@ graph LR
 ```
 
 ### **🔧 Técnicas Aplicadas**
-- **Limpeza de Dados**: Remoção de 50%+ colunas com alta nulidade
-- **Feature Engineering**: Criação de 6 índices socioeconômicos compostos
-- **Análise Estatística**: Correlações de Pearson, distribuições, outliers
+- **Limpeza de Dados**: Remoção colunas de colunas descnecessarias, pouco relevantes ou redundantes; Renomeção de colunas e reordenação logica das mesmas; Mapeamento dos dados categoricos de acordo com o dicionario de dados; Remoção de candidatos que não compareceram em todas as provas; Remoção de colunas com alto indice de valores ausentes. 
+Resultado: De um dataframe pouco intuitivo com diversos fatores a serem tratados e ajustados (2,6mm de registros e 48 colunas) para uma dataframe de legivel, mais enxuto e legivel (3,9mm de registros e 58 colunas).
+- **Feature Engineering**: Mapeamento das variaveis qualitativas para quantitavivas ordinais para analises posteriores, criação de colunas como "Região", "Nota media Geral do candidato", "Faixa de renda per capita" e colunas de índices socioeconômicos compostos para analises posteriores.
+- **Análise Estatística**: Correlações de Pearson, distribuições, outliers. Realizando analises Univariadas e Bivariadas para entender melhor a distribuição dos candidatos e suas respectivas performaces e analises das variaveis que afetam ou não a performace do candidato.
 - **Visualização**: Histogramas, boxplots, heatmaps de correlação
 
 ## 📁 **Estrutura do Projeto**
@@ -78,50 +77,15 @@ projeto-enem-2023/
 └── 📦 requirements.txt                  # Dependências Python
 ```
 
-## 🚀 **Como Executar**
-
-### **Pré-requisitos**
-```bash
-Python 3.8+
-Jupyter Notebook
-8GB+ RAM (para dataset completo)
-```
-
-### **Instalação**
-```bash
-# 1. Clone o repositório
-git clone https://github.com/seu-usuario/projeto-enem-2023.git
-cd projeto-enem-2023
-
-# 2. Instale as dependências
-pip install -r requirements.txt
-
-# 3. Inicie o Jupyter
-jupyter notebook
-
-# 4. Execute os notebooks na ordem:
-# → 01_data_cleaning.ipynb
-# → 02_feature_engineering.ipynb  
-# → 03_exploratory_analysis.ipynb
-```
-
-### **💡 Testando com Amostras**
-```python
-# Use os dados de amostra para testes rápidos
-data = pd.read_csv('data/samples/amostra_clean.csv')
-```
 
 ## 🧮 **Tecnologias Utilizadas**
 
 ### **🐍 Stack Principal**
-- **Python 3.8+**: Linguagem principal
-- **Pandas 1.5+**: Manipulação de dados
-- **NumPy 1.21+**: Computação numérica
-- **Matplotlib 3.5+**: Visualizações básicas
-- **Seaborn 0.11+**: Visualizações estatísticas avançadas
-
-### **📊 Bibliotecas Específicas**
-- **SciPy**: Testes estatísticos e correlações
+- **Python **: Linguagem principal
+- **Pandas **: Manipulação de dados
+- **NumPy **: Computação numérica
+- **Matplotlib **: Visualizações básicas
+- **Seaborn **: Visualizações estatísticas avançadas
 - **Jupyter**: Ambiente de desenvolvimento interativo
 
 ## 📊 **Variáveis Criadas (Feature Engineering)**
@@ -138,7 +102,7 @@ data = pd.read_csv('data/samples/amostra_clean.csv')
 
 ### **💰 Variáveis Econômicas**
 - **Renda Per Capita**: Calculada a partir de faixas de renda familiar
-- **Faixas Socioeconômicas**: 9 categorias baseadas em salários mínimos
+- **Faixas Renda Per Capita**: 9 categorias baseadas em salários mínimos
 
 ## 📈 **Principais Análises Realizadas**
 
@@ -153,7 +117,6 @@ data = pd.read_csv('data/samples/amostra_clean.csv')
 - **Análise Regional**: Performance por estado/região
 
 ### **🎯 Segmentações Específicas**
-- Desempenho por **tipo de escola** (pública vs privada)
 - Impacto da **escolaridade dos pais**
 - Diferenças por **faixa de renda**
 - Padrões **regionais** de desempenho
@@ -180,38 +143,27 @@ data = pd.read_csv('data/samples/amostra_clean.csv')
 ### **⚠️ Limitações Identificadas**
 - Dados representam apenas um ano (2023)
 - Variáveis socioeconômicas são auto-declaradas
-- Análise descritiva (sem inferência causal)
 
 ### **🚀 Melhorias Futuras**
-- [ ] **Modelagem Preditiva**: Random Forest/XGBoost para predição de notas
 - [ ] **Análise Temporal**: Comparação com anos anteriores (2019-2023)
 - [ ] **Dashboard Interativo**: Streamlit/Dash para exploração dinâmica
-- [ ] **Testes Estatísticos**: Qui-quadrado, Mann-Whitney para validação
 - [ ] **Clustering**: Segmentação de perfis de estudantes
 
 ## 👤 **Sobre o Autor**
 
-**[Seu Nome]**  
-*Analista de Dados | Business Intelligence*
+**[Thiago Folgado]**  
+*Data Analytics | Business Intelligence*
 
 - 💼 2 anos de experiência em BI e Reporting
 - 🎯 Especialização em análise exploratória e visualização de dados
 - 📊 Projetos com Python, Pandas, e ferramentas de BI
 
-**Contato**: [seu-email@email.com] | [LinkedIn](https://linkedin.com/in/seu-perfil) | [Portfólio](https://seu-site.com)
+**Contato**: [LinkedIn](https://www.linkedin.com/in/thiagohenriquef/) | [Portfólio](https://thiagofolgado.framer.website/)
 
 ---
 
 ## 📄 **Licença**
 
-Este projeto está sob a licença MIT. Os dados do ENEM são públicos e disponibilizados pelo INEP.
+Os dados do ENEM são públicos e disponibilizados pelo INEP.
 
----
 
-<div align="center">
-
-**⭐ Se este projeto foi útil, considere dar uma estrela!**
-
-*Desenvolvido com 💙 para contribuir com análises educacionais baseadas em evidências.*
-
-</div>
